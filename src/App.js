@@ -1,7 +1,7 @@
 import React from 'react'
 /*import { Switch, Route, Link} from 'react-router-dom';*/
 import { Routes, Route, Link } from "react-router-dom";
-import { Layout, Typogaphy, Space } from 'antd'
+import { Layout, Typography, Space } from 'antd'
 import { Navbar, Exchanges, Homepage, CryptoDetails, CryptoCurrencies, News } from './components'
 import './App.css'
 
@@ -24,9 +24,18 @@ function App() {
           </Routes>
         </div>
       </Layout>
+    
+     <div className='footer' level={5} >
+      <Typography.Title style={{color: "white", textAlign:"center"}}>
+        Cryptovini <br />
+        All rights reserved
+      </Typography.Title>
+      <Space>
+        <Link to="/">Home</Link>
+        <Link to="/exchanges">Exchanges</Link>
+        <Link to="/news">News</Link>
+      </Space>
     </div>
-    <div className='navbar'>
-      
     </div>
   </div>
   )
